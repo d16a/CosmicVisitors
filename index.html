@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmic Visitors NFT Collection</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #090909;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            flex: 1;
+        }
+
+        .hero {
+            text-align: center;
+            margin-bottom: 4rem;
+            padding: 4rem 0;
+        }
+
+        .title {
+            font-size: 3.5rem;
+            font-weight: bold;
+            margin: 0;
+            background: linear-gradient(to right, #00FFFF, #FF69B4, #7FFF00, #FFD700);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            animation: titleGlow 4s ease-in-out infinite;
+            text-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+        }
+
+        @keyframes titleGlow {
+            0%, 100% { filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.3)); }
+            50% { filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.5)); }
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #888;
+            margin-top: 1rem;
+        }
+
+        .ufo-previews {
+            position: relative;
+            height: 400px;
+            margin: 4rem 0;
+            overflow: hidden;
+            background: rgba(26, 26, 46, 0.3);
+            border-radius: 1rem;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .info-section {
+            background: rgba(26, 26, 46, 0.3);
+            border-radius: 1rem;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .info-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+
+        .info-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .info-card h3 {
+            color: #00FFFF;
+            margin-top: 0;
+        }
+
+        .rarity-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        .rarity-table th,
+        .rarity-table td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .rarity-table th {
+            color: #FF69B4;
+        }
+
+        .mint-info {
+            text-align: center;
+            margin: 4rem 0;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 1rem;
+        }
+
+        .mint-price {
+            font-size: 2rem;
+            color: #7FFF00;
+            margin: 1rem 0;
+        }
+
+        .features-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .features-list li {
+            margin: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .features-list li::before {
+            content: "•";
+            color: #00FFFF;
+            position: absolute;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <div class="hero">
+            <h1 class="title">Cosmic Visitors</h1>
+            <p class="subtitle">A Unique NFT Collection of Mysterious Encounters</p>
+        </div>
+
+        <div class="info-section">
+            <h2>About The Collection</h2>
+            <p>Step into a world where reality meets mystery with Cosmic Visitors - an exclusive NFT collection capturing ethereal encounters that have puzzled and fascinated humanity for generations. Each piece in our collection tells a unique story of otherworldly presence in our skies.</p>
+            
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>Collection Details</h3>
+                    <ul class="features-list">
+                        <li>10,000 Unique NFTs</li>
+                        <li>Procedurally Generated Art</li>
+                        <li>Dynamic SVG Animations</li>
+                        <li>On-chain Metadata</li>
+                        <li>ERC-721A Standard</li>
+                    </ul>
+                </div>
+
+                <div class="info-card">
+                    <h3>Unique Features</h3>
+                    <ul class="features-list">
+                        <li>Interactive Animations</li>
+                        <li>Time-of-Day Effects</li>
+                        <li>Location-based Scenes</li>
+                        <li>Special Formations</li>
+                        <li>Atmospheric Phenomena</li>
+                    </ul>
+                </div>
+
+                <div class="info-card">
+                    <h3>Rarity System</h3>
+                    <table class="rarity-table">
+                        <tr>
+                            <th>Tier</th>
+                            <th>Rarity</th>
+                        </tr>
+                        <tr>
+                            <td>Common</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td>Uncommon</td>
+                            <td>30%</td>
+                        </tr>
+                        <tr>
+                            <td>Rare</td>
+                            <td>15%</td>
+                        </tr>
+                        <tr>
+                            <td>Legendary</td>
+                            <td>5%</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="mint-info">
+            <h2>Early Mint Details</h2>
+            <div class="mint-price">10 MATIC</div>
+            <p>Approximately $5 USD</p>
+            <p>Max 10 NFTs per transaction</p>
+        </div>
+
+             <!-- Previous content remains the same until mint-info section -->
+
+        <div class="social-links">
+            <h2>Join Our Community</h2>
+            <div>
+                <h2><a href="https://opensea.io/collection/cosmic-visitors-nft-collection/overview" target="_blank">
+                 
+                    OpenSea
+                </a></h2>
+                <h2><a href="https://x.com/cosmicvisitors_" target="_blank">
+                  
+                    Twitter
+                </a></h2>
+                <h2><a href="https://discord.gg/#" target="_blank">
+                
+                    Discord
+                </a></h2>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
